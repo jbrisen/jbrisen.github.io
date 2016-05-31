@@ -1,0 +1,133 @@
+
+.nav a {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 40px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+
+.nav {
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.nav ul {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.jumbotron {
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.jumbotron h1 {
+	color: #046CC1;
+    margin-top: 0;
+    margin-bottom: 0;
+	margin-right: 0px;
+    -webkit-font-smoothing: antialiased;
+	font-size: 63px;
+    text-shadow:  0 1px 8px rgba(140, 185,222, .1);
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;
+
+}
+
+.jumbotron h2 {
+	color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+	margin-right: 0px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow:  0 1px 8px rgba(140, 185,222, .1);
+	font-size: 63px;
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;
+}
+
+.jumbotron p {
+    margin-top: 0;
+    text-shadow:  0 -1px 1px rgba(0, 0, 0, 0.6);
+}
+.jumbotron a {
+    font-size: 20px;
+    color: #8eb7e9;
+}
+.neighborhood-guides h2 {
+    margin-top: 37px;
+}
+.neighborhood-guides .thumbnail {
+    margin: none;
+    padding: none;
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+.learn-more {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.neighborhood-guides .thumbnail {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.neighborhood-guides .thumbnail h4 {
+    font-family: Shift, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 29px;
+    color: #fff;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+}
+.jumboabout .container {
+	margin-left: auto;
+    margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+	width: 800px;
+	overflow: hidden;
+}

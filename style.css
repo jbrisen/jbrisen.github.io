@@ -1,0 +1,649 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.about {
+  margin: 70px auto 40px;
+  padding: 8px;
+  width: 260px;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
+  color: #666;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  background: #eee;
+  background: rgba(250, 250, 250, 0.8);
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.about a {
+  color: #333;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s;
+}
+.about a:hover {
+  text-decoration: none;
+  background: #fafafa;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.about-links {
+  height: 30px;
+}
+.about-links > a {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-author {
+  margin-top: 5px;
+}
+.about-author > a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+}
+
+/*
+ * Copyright (c) 2012-2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+.jumbothree .container {
+  width: 640px;
+  text-align: center;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #2a2a2a url("../img/bg.png") 0 0 repeat;
+  padding-top: 42px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav .container .pull-right {
+  margin-top: 24px;
+}
+
+.jumboone {
+	background-image:url('bannersick2.png');
+	size: 380px;
+	height: 380px;
+	padding-top: 2px;
+    padding-bottom: 0px;
+	background-color: rgba(0, 183, 207, 0.46);
+	margin-bottom: 0px;
+}
+.jumboone .container {
+	padding-right: 555px;
+	padding-left: 26px;
+	height: 312px;
+	margin-right: auto;
+    margin-left: auto;
+}
+
+.jumboone a {
+	text-decoration: none;
+}
+
+.jumbotwo {
+	background: #fff;
+	padding: 0px;
+    padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	height: 300px;
+	background-size: cover;
+//	background-image:url('keyboard.png');
+}
+
+.jumbotwo .container {
+	text-align:center;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 0px;
+	padding-right: 0px;
+	top: 80px;
+}
+
+.jumbotwo a {
+	text-decoration: none;
+}
+
+.jumbotwo mark {
+    background-color: black;
+    color: white;
+}
+
+.jumbotwo h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+	margin-right: 0px;
+    -webkit-font-smoothing: antialiased;
+	font-size: 36px;
+    text-shadow:  0 1px 8px rgba(140, 185,222, .1);
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;
+}
+
+.jumboone .container h1 {
+	color:#046CC1
+}
+.jumbotwo h2 {
+	color: #046CC1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	margin-right: 0px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow:  0 1px 8px rgba(140, 185,222, .1);
+	font-size: 63px;
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;
+}
+
+.jumbotwo p {
+	text-shadow: 0 0 0; 
+}
+
+.jumbothree {
+	background-color: #2a2a2a;
+	padding: 0px;
+    padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	height: 300px;
+	background-size: cover;
+}
+
+.jumbothree .container {
+	margin-right: auto;
+    margin-left: auto;
+}
+
+.jumbothree h1 {
+	color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+	margin-right: 0px;
+    -webkit-font-smoothing: antialiased;
+	font-size: 44px;
+    text-shadow:  0 1px 8px rgba(140, 185,222, .1);
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;
+}
+
+.jumbothree li {
+	
+}
+
+
+.jumbofoot {
+	height: 220px;
+	padding-top: 0px;
+    padding-bottom: 0px;
+	background-color: #222222;
+}
+
+.jumbofoot h2 {
+	color:#ffffff;
+	font-size: 18px;
+	margin-top: 6px;
+	margin-left: 40px;
+}
+
+.jumbofoot h3 {
+	color:#777777;
+	font-size: 24px;
+	margin-top: 6px;
+	
+}
+
+.jumbofoot li {
+	font-size: 18px;
+	color: #777777;
+	margin-left: 0px;
+	text-align: center;
+}
+
+.jumbofoot a{
+	font-size: 18px;
+}
+
+
+.jumbofoot a:link {
+    text-decoration: none;
+	color: #777777;
+}
+
+.jumbofoot a:visited {
+    text-decoration: none;
+	color: #918e8e;
+}
+
+.jumbofoot li:hover {
+    text-decoration: none;
+	color: #005E86;
+}
+
+.foot-mail h2:hover {
+	text-decoration: none;
+	color: #005E86;
+}
+
+.jumbofoot a:hover {
+    text-decoration: none;
+	color: #005E86;
+}
+
+.jumbofoot a:active {
+    text-decoration: none;
+	color: 0d8cbf;
+}
+
+
+.jumbofoot .container {
+	margin-right: auto;
+    margin-left: auto;
+}
+
+li
+{
+    list-style-type: none;
+}
+.nav .container .pull-left {
+    display: block;
+    padding-top: 6px;
+    margin-bottom: 12px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #5a5a5a;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+
+.foot-left {
+	text-align: center;
+}
+.foot-left h2 {
+	margin-left: 0;
+}
+
+.foot-middle {
+	text-align: center;
+}
+
+.foot-middle h2 {
+	margin-left: 0;
+}
+
+.foot-right {
+	padding-left: 0px;
+	padding-top: 0px;
+	font-size:20px;
+}
+
+.foot-house h2 {
+}
+
+.foot-mail h2 {
+	font-size: 15px;
+}
+
+.col-md-4 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.foot-phone {
+}
+
+.foot-house{
+}
+
+.foot-mail {
+	height: 20px;
+}
+
+.buttonText {
+  font: 18px/1.5 Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+ 
+.buttonText a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#button1 {
+  background-color: #7d9cdf;
+  color: #b7d7ff; 
+  border: 2px solid #000;
+  height: 38px;
+  width: 125px;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  line-height: 38px;
+  
+  /*Rounded Corners*/
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+  
+ /*Gradient*/
+ background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+ background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+ background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+ background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+ background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  
+ /*Shadow*/
+ -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ -moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ 
+ /*Transition*/
+-webkit-transition: All 0.5s ease;
+-moz-transition: All 0.5s ease;
+-o-transition: All 0.5s ease;
+-ms-transition: All 0.5s ease;
+transition: All 0.5s ease;
+}
+
+#button1:hover {
+  background: #b7d7ff;
+  color: #048adf; 
+}
+
+
+#button2 {
+  background: #b7d7ff;
+  color: #048adf;
+  border: 2px solid #000;
+  height: 38px;
+  width: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  line-height: 38px;
+  
+  /*Rounded Corners*/
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+  
+ /*Gradient*/
+ background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+ background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+ background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+ background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+ background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  
+ /*Shadow*/
+ -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ -moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ 
+ /*Transition*/
+-webkit-transition: All 0.5s ease;
+-moz-transition: All 0.5s ease;
+-o-transition: All 0.5s ease;
+-ms-transition: All 0.5s ease;
+transition: All 0.5s ease;
+ 
+}
+
+#button2:hover {
+  background-color: #7d9cdf;
+  color: #b7d7ff; 
+}
+
+.container .progress {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.progress {
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  position: relative;
+  height: 16px;
+  border-radius: 4px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+.progress-bar:before, .progress-bar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.progress-bar:before {
+  bottom: 0;
+  background: url("../img/stripes.png") 0 0 repeat;
+  border-radius: 4px 4px 0 0;
+}
+.progress-bar:after {
+  z-index: 2;
+  bottom: 45%;
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+}
+
+/*
+ * Note: using adjacent or general sibling selectors combined with
+ *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
+ *       See this article for more info and a potential fix:
+ *       http://css-tricks.com/webkit-sibling-bug/
+ */
+#five:checked ~ .progress > .progress-bar {
+  width: 5%;
+  background-color: #f63a0f;
+}
+
+#twentyfive:checked ~ .progress > .progress-bar {
+  width: 25%;
+  background-color: #f27011;
+}
+
+#fifty:checked ~ .progress > .progress-bar {
+  width: 50%;
+  background-color: #f2b01e;
+}
+
+#seventyfive:checked ~ .progress > .progress-bar {
+  width: 75%;
+  background-color: #f2d31b;
+}
+
+#onehundred:checked ~ .progress > .progress-bar {
+  width: 100%;
+  background-color: #86e01e;
+}
+
+.radio {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  margin: 0 5px 20px;
+  padding: 3px 8px;
+  color: #aaa;
+  text-shadow: 0 1px black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.radio:checked + .label {
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width:480px) {
+    .jumboone {
+		background-image: url('bannersick2.png');
+	}
+	.jumbofoot {
+		height: 220px;
+	}
+}
+
+@media (min-width:992px) {
+    .jumboone {
+		background-image: url('bannersick22.png');
+	}
+	.jumbofoot {
+		height: 220px;
+	}
+}
+@media (min-width:1100px) {
+    .jumboone {
+	background-image: url('bannersick22.png');
+	}
+}
+@media (min-width:1200px) {
+	.jumboone {
+	background-image: url('bannersick2222.png');
+	}
+}
+
+@media (min-width:1550px) {
+	.jumboone {
+	background-image: url('bannersick222222.png');
+	}
+}
+@media (min-width:1750px) {
+	.jumboone {
+	background-image: url('bannersick2222222.png');
+	}
+}
+
+div.center
+{
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jumbofoot .pull-left .h2 {
+	margin-top: 0px;
+}
+
+.jumbofoot a:link {
+    text-decoration: none;
+	color: #000000;
+}
+
+.jumbofoot a:visited {
+    text-decoration: none;
+	color: #89DDE8;
+}
+
+.nav a {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+    text-decoration: none;
+	color: #428bca;
+}
+
+.nav a:active {
+    text-decoration: none;
+	color: #0d8cbf;
+}
+
+.jumboabout {
+	height: 500px;
+	padding-top: 2px;
+    padding-bottom: 0px;
+	background-color: rgba(0, 183, 207, 0.46);
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+
