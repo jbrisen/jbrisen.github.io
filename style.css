@@ -646,3 +646,11 @@ div.center
 	overflow: hidden;
 }
 
+div select {
+	display: none;
+}
+
+@media (max-width: 806px) {
+	div ul		{ display: none; }
+	div select 	{ display: inline-block; }
+}
