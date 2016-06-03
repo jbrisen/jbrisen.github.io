@@ -1,88 +1,65 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<title>Chat - Customer Module</title>
-<link type="text/css" rel="stylesheet" href="chatpage.css" />
+	<title>Contact Us</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<link rel="stylesheet" type="text/css" href="styleee.css" />
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
- 
-<div id="wrapper">
-    <div id="menu">
-        <p class="welcome">Welcome, <b></b></p>
-        <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
-        <div style="clear:both"></div>
-    </div>
-     
-    <div id="chatbox"></div>
-     
-    <form name="message" action="">
-        <input name="usermsg" type="text" id="usermsg" size="63" />
-        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+
+<body>
+
+    <?php include("../header.php"); ?>
+
+	<div id="page-wrap">
+
+	<h1>Contact Us</h1>
+		<div id="contact-area">
+			
+			<form method="post" action="contactengine.php">
+				<table>
+					<tr>
+						<td class="left"><label for="Name">Name:</label></td>
+						<td><input type="text" name="Name" /></td>
+					</tr>
+					<tr>
+						<td class="left"><label for="City">City:</label></td>
+						<td><input type="text" name="City" /></td>
+					</tr>
+					<tr>
+						<td class="left"><label for="Email">Email:</label></td>
+						<td><input type="text" name="Email" /></td>
+					</tr>
+					<tr>
+						<td class="left"><label for="Message">Message:</label></td>
+						<td><textarea name="Message" rows="20" cols="20"></textarea></td>
+					</tr>
+				</table>
+				
+				<div id="captcha-area">
+				
+				<form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="6LfjryETAAAAAOs0jiVXK8J2ks4aMUaZHjAdzZrl"></div>
+      <br/>
+      <input type="submit" value="Submit">
     </form>
-</div>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-<script type="text/javascript">
-// jQuery Document
-$(document).ready(function(){
- 
-});
-</script>
-
-<?
-session_start();
- 
-function loginForm(){
-    echo'
-    <div id="loginform">
-    <form action="index.php" method="post">
-        <p>Please enter your name to continue:</p>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" />
-        <input type="submit" name="enter" id="enter" value="Enter" />
-    </form>
-    </div>
-    ';
-}
- 
-if(isset($_POST['enter'])){
-    if($_POST['name'] != ""){
-        $_SESSION['name'] = stripslashes(htmlspecialchars($_POST['name']));
-    }
-    else{
-        echo '<span class="error">Please type in a name</span>';
-    }
-}
-?>
-
-<?php
-if(!isset($_SESSION['name'])){
-    loginForm();
-}
-else{
-?>
-<div id="wrapper">
-    <div id="menu">
-        <p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
-        <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
-        <div style="clear:both"></div>
-    </div>    
-    <div id="chatbox"></div>
-     
-    <form name="message" action="">
-        <input name="usermsg" type="text" id="usermsg" size="63" />
-        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
-    </form>
-</div>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-<script type="text/javascript">
-// jQuery Document
-$(document).ready(function(){
-});
-</script>
-<?php
-}
-?>
-
-
+				<div class="g-recaptcha" data-sitekey="6LfjryETAAAAAOs0jiVXK8J2ks4aMUaZHjAdzZrl"></div>
+				
+				</div>
+								
+				<input type="submit" name="submit" value="Submit" class="submit-button" />
+			</form>
+		
+		</div>
+	
+	</div>
+	
+	<?php include("../footer.php"); ?>
 
 </body>
+
 </html>
