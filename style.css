@@ -122,16 +122,17 @@ table {
 }
 
 .jumboone {
-	background-image:url('bannersick2.png');
+	background-image:url('bannersick22222.png');
 	size: 380px;
 	height: 380px;
 	padding-top: 2px;
     padding-bottom: 0px;
 	background-color: rgba(0, 183, 207, 0.46);
 	margin-bottom: 0px;
+//	background-size: contain;
 }
 .jumboone .container {
-	padding-right: 555px;
+//	padding-right: 555px;
 	padding-left: 26px;
 	height: 312px;
 	margin-right: auto;
@@ -558,7 +559,18 @@ transition: All 0.5s ease;
   background: rgba(0, 0, 0, 0.25);
 }
 
-@media (min-width:480px) {
+
+
+@media (min-width:2px) {
+    .jumboone {
+		background-image: url('bannersick333.png');
+	}
+	.jumbofoot {
+		height: 220px;
+	}
+}
+
+@media (min-width:807px) {
     .jumboone {
 		background-image: url('bannersick2.png');
 	}
@@ -648,9 +660,15 @@ div.center
 
 div select {
 	display: none;
+	center;
+	
 }
 
 @media (max-width: 806px) {
 	div ul		{ display: none; }
 	div select 	{ display: inline-block; }
+}
+
+img {
+  max-width: 100%
 }
