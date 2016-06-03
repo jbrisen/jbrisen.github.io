@@ -3,16 +3,17 @@
 <!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
-<head>
-	<title>Contact Us</title>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="style.css">	
+		<meta name="viewport" content="width=999px"; initial-scale=1.0">
+		<title>FixItFast: Fixing Windows Microsoft PCs & Laptops Since 2006</title>
+	</head>
 	
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
-	<link rel="stylesheet" type="text/css" href="styleee.css" />
-	<script src='https://www.google.com/recaptcha/api.js'></script>
-
-</head>
-
 <body>
 
     <?php include("../header.php"); ?>
